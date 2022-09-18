@@ -1,4 +1,7 @@
 version: v1
+name: buf.build/jeremyzhang/petapis-learn
+deps:
+  - buf.build/googleapis/googleapis
 breaking:
   use:
     - FILE
