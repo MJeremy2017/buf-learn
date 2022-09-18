@@ -1,8 +1,10 @@
 version: v1
 managed:
   enabled: true
-#  go_package_prefix:
-#    default: mypkg
+  go_package_prefix:
+    default: mypetstore/gen/proto/gogo  # equals module_path + out_path
+    except:
+      - buf.build/googleapis/googleapis
 plugins:
   - name: go
     out: gen/proto/gogo
