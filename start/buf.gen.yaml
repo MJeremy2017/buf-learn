@@ -1,8 +1,14 @@
 version: v1
 managed:
   enabled: true
-  go_package_prefix:
-    default: mypkg
+#  go_package_prefix:
+#    default: mypkg
 plugins:
   - name: go
     out: gen/proto/gogo
+    opt: paths=source_relative
+  - name: go-grpc
+    out: gen/proto/gogo
+    opt:
+      - paths=source_relative
+      - require_unimplemented_servers=false
