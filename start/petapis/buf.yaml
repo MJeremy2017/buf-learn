@@ -2,6 +2,7 @@ version: v1
 name: buf.build/jeremyzhang/petapis-learn
 deps:
   - buf.build/googleapis/googleapis
+  - buf.build/jeremyzhang/paymentapis
 breaking:
   use:
     - FILE
